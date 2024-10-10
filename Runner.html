@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Runner Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    
+</head>
+<body>
+    <div class="container" id="container">
+        <!-- credit -->
+        <div class="credit">
+            <div class="credit-inner">
+              <p class="credit-title">Created By</p>
+              <p class="credit-name">Gurtej</p>
+            </div>
+          </div>
+
+
+        <button id="pause-button">Pause</button>
+        <!-- <div class="score" id="score">Your score: 0</div> -->
+
+        <div class="scoreboard">
+            <div class="score-container">
+              <h2>Score:</h2>
+              <p id="score">0</p>
+            </div>
+            <div class="score-container">
+              <h2>High Score:</h2>
+              <p id="high-score">0</p>
+            </div>
+          </div>
+
+        <div class="welcome">Welcome to Runnner-ipixel <span>Use ⬆⬅➡⬇ arrows to play the game</span></div>
+        <div class="gameOver" id="gameOver">Game Over</div>
+
+
+        <div class="runner" id="runner"><img id="runnerImg" src="images/runner/runner-001.png" alt="Player" ></div>
+
+        <div class="enemy animateEnemy" id="enemy"><img id="enemyImg" src="images/enemy/enemy1.gif" alt="Enemy" width="250" height="250"></div>
+
+    </div>
+
+    <!-- retry button -->
+    <div id="game-over" class="game-over">
+        <h1>Game Over!</h1>
+        <button id="retry-button">Retry</button>
+      </div>
+
+
+      <!-- arrow buttons -->
+
+       <!-- up -->
+      <div class="arrow-up" id="arrow-up" onclick="arrowUp()">
+        <div id="arrowAnim">
+          <div class="arrowSliding">
+            <div class="arrow"></div>
+          </div>
+          <div class="arrowSliding delay1">
+            <div class="arrow"></div>
+          </div>
+          <div class="arrowSliding delay2">
+            <div class="arrow"></div>
+          </div>
+          <div class="arrowSliding delay3">
+            <div class="arrow"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--right  -->
+      <div class="arrow-right" id="arrow-right" onclick="arrowRight()">
+        <div id="arrowAnim">
+          <div class="arrowSliding">
+            <div class="arrow"></div>
+          </div>
+          <div class="arrowSliding delay1">
+            <div class="arrow"></div>
+          </div>
+          <div class="arrowSliding delay2">
+            <div class="arrow"></div>
+          </div>
+          <div class="arrowSliding delay3">
+            <div class="arrow"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- left -->
+      <div class="arrow-left" id="arrow-left" onclick="arrowLeft()">
+        <div id="arrowAnim">
+          <div class="arrowSliding">
+            <div class="arrow"></div>
+          </div>
+          <div class="arrowSliding delay1">
+            <div class="arrow"></div>
+          </div>
+          <div class="arrowSliding delay2">
+            <div class="arrow"></div>
+          </div>
+          <div class="arrowSliding delay3">
+            <div class="arrow"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- down -->
+      <div class="arrow-down" id="arrow-down" onclick="arrowDown()">
+        <div id="arrowAnim">
+          <div class="arrowSliding">
+            <div class="arrow"></div>
+          </div>
+          <div class="arrowSliding delay1">
+            <div class="arrow"></div>
+          </div>
+          <div class="arrowSliding delay2">
+            <div class="arrow"></div>
+          </div>
+          <div class="arrowSliding delay3">
+            <div class="arrow"></div>
+          </div>
+        </div>
+      </div>
+
+      
+    <script src="script.js"></script>
+</body>
+</html>
